@@ -2,7 +2,7 @@ import { Schema as YupSchema } from 'yup'
 
 export interface FormalConfig<Schema> {
   schema?: YupSchema<Schema>
-  onSubmit: (values: Schema, formalState: FormalState<Schema>) => void
+  onSubmit: (values: Schema, formalState?: FormalState<Schema>) => void
 }
 
 export type FormalErrors<Schema> = {
